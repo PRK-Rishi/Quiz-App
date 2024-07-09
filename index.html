@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AI, ML, and CS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="homepage">
+        <div class="welcome-message">
+            <h1>Welcome to the AI, ML, and Computer Science Quiz!</h1>
+            <p>Please enter your name to begin the quiz:</p>
+            <input type="text" id="userName" placeholder="Your Name">
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+    <div class="container" id="quizContainer" style="display: none;">
+        <h1>AI, ML, and Computer Science Quiz</h1>
+        <div id="timer">Time Remaining: 05:00</div>
+        <form id="quizForm" onsubmit="return false;">
+            <div id="questionsContainer">
+            </div>
+            <div id="pagination">
+                <button type="button" id="prevBtn" onclick="changePage(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="changePage(1)">Next</button>
+            </div>
+            <button id="submitBtn" onclick="submitQuiz()" style="display: none;">Submit</button>
+        </form>
+    </div>
+    <div id="resultPopup" style="display: none;">
+        <button id="closeButton" onclick="returnToHomepage()">X</button>
+        <div id="score"></div>
+        <div id="detailedResults"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
