@@ -1,4 +1,3 @@
-
 let currentPage = 0;
 const questionsPerPage = 5;
 const totalQuestions = 20;
