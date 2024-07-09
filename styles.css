@@ -221,10 +221,10 @@ body {
 }
 
 #score {
-    font-size: 36px;
+    font-size: 25px;
     font-weight: bold;
     color:#333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #detailedResults {
@@ -236,14 +236,14 @@ body {
 #detailedResults div {
     margin-bottom: 15px;
     padding: 20px;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color:aqua;
     border-left: 5px solid #007BFF;
     border-radius: 10px;
     transition: background-color 0.3s;
 }
 
 #detailedResults div:hover {
-    background-color: rgba(0, 123, 255, 0.2);
+    background-color:cadetblue;
 }
 
 #detailedResults p {
